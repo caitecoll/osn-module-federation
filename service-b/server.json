@@ -1,0 +1,7 @@
+{
+  "animals": [
+    { "id": 1, "type": "Possum", "name": "Fast Frank" },
+    { "id": 2, "type": "Giraffe", "name": "Tall Tina" },
+    { "id": 3, "type": "Turtle", "name": "Slow Susan" }
+  ]
+}

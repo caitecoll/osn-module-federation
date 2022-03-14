@@ -2,7 +2,7 @@ const { whenDev } = require("@craco/craco");
 const ModuleFederation = require("webpack/lib/container/ModuleFederationPlugin");
 const pkgJson = require("./package.json");
 
-const appName = 'serviceB';
+const appName = "serviceB";
 const deps = pkgJson.dependencies;
 
 // run

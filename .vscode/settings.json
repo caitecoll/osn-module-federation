@@ -1,0 +1,32 @@
+{
+  "editor.rulers": [100],
+  "html.format.wrapLineLength": 100,
+  "editor.tabSize": 2,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.formatOnSave": true
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "dist": true,
+    ".coverage": true,
+    ".nyc_output": true
+  },
+  "git.inputValidationSubjectLength": 72,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}

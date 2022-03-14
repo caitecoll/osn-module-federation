@@ -1,10 +1,13 @@
-import LocalButton from './Button';
+import Typography from "@mui/material/Typography";
+import AnimalList from "./AnimalList";
+import LocalButton from "./Button";
 
 const App = () => (
   <div>
-    <h1>Basic Host-Remote</h1>
-    <h2>Remote</h2>
+    <Typography variant="h4">Basic Host-Remote</Typography>
+    <Typography variant="h5">Service B</Typography>
     <LocalButton />
+    <AnimalList />
   </div>
 );
 

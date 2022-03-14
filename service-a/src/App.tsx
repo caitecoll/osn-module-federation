@@ -1,12 +1,13 @@
-import React from 'react';
+import Typography from "@mui/material/Typography";
+import React from "react";
 
 // @ts-ignore
-const RemoteButton = React.lazy(() => import('serviceB/Button'));
+const RemoteButton = React.lazy(() => import("serviceB/Button"));
 
 const App = () => (
   <div>
-    <h1>Basic Host-Remote</h1>
-    <h2>Host</h2>
+    <Typography variant="h4">Basic Host-Remote</Typography>
+    <Typography variant="h5">Service A</Typography>
     <React.Suspense fallback="Loading Button">
       <RemoteButton />
     </React.Suspense>
