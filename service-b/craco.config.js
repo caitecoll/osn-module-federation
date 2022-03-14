@@ -36,6 +36,7 @@ module.exports = function ({ env }) {
             filename: "remoteEntry.js",
             exposes: {
               "./Button": "./src/Button",
+              "./AnimalList": "./src/AnimalList",
             },
             shared: {
               ...deps,

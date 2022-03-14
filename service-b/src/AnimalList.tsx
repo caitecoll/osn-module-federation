@@ -1,12 +1,12 @@
 import { FC, useEffect, useState } from "react";
+import { getAnimals } from "./services/AnimalService";
 
 const AnimalList: FC = () => {
   const [animalList, setAnimalList] = useState<any[]>([]);
 
   useEffect(() => {
     async function getData() {
-      const response = await fetch("http://localhost:4000/animals");
-      setAnimalList(await response.json());
+      setAnimalList(await getAnimals());
     }
     getData();
   }, []);
