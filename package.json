@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "service-a",
+      "service-b",
+      "service-c"
+    ]
+  },
+  "scripts": {
+  }
+}
