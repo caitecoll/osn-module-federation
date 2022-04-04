@@ -21,7 +21,7 @@ const outputDevConfig = {
 
 const outputProdConfig = {
   filename: "[name].[contenthash].js",
-  publicPath: `/${appName}/latest/`,
+  publicPath: `https://caitecoll.github.io/osn-module-federation/`,
 };
 
 module.exports = function ({ env }) {
@@ -29,7 +29,8 @@ module.exports = function ({ env }) {
     devServer: whenDev(() => devServerConfig, []),
     webpack: {
       configure: {
-        output: env === "development" ? outputDevConfig : outputProdConfig,
+        // output: env === "development" ? outputDevConfig : outputProdConfig,
+        output: whenDev(() => outputDevConfig, outputProdConfig),
         plugins: [
           new ModuleFederation({
             name: appName,
@@ -37,6 +38,7 @@ module.exports = function ({ env }) {
             exposes: {
               "./Button": "./src/Button",
               "./AnimalList": "./src/AnimalList",
+              "./Form": "./src/FormWrapper",
             },
             shared: {
               ...deps,

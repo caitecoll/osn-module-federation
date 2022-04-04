@@ -1,5 +1,5 @@
 import MUIButton from "@mui/material/Button";
 
-const Button = () => <MUIButton>Service B Button</MUIButton>;
+const Button = () => <MUIButton>Service B - MUI5</MUIButton>;
 
 export default Button;
