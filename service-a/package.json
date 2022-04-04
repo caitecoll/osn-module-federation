@@ -45,6 +45,7 @@
     ]
   },
   "devDependencies": {
-    "@craco/craco": "^7.0.0-alpha.3"
+    "@craco/craco": "^7.0.0-alpha.3",
+    "external-remotes-plugin": "^1.0.0"
   }
 }

@@ -1,6 +1,7 @@
 const { whenDev } = require("@craco/craco");
 const ModuleFederation = require("webpack/lib/container/ModuleFederationPlugin");
 const pkgJson = require("./package.json");
+const ExternalTemplateRemotesPlugin = require("external-remotes-plugin");
 
 const appName = "serviceA";
 const deps = pkgJson.dependencies;
@@ -36,7 +37,8 @@ module.exports = function ({ env }) {
             remotes: {
               serviceB:
                 // "serviceB@https://caitecoll.github.io/osn-module-federation/remoteEntry.js",
-                "serviceB@http://localhost:3001/remoteEntry.js",
+                // "serviceB@http://localhost:3001/remoteEntry.js",
+                "serviceB@http://[window.serviceBUrl]/remoteEntry.js",
             },
             shared: {
               ...deps,
@@ -50,6 +52,7 @@ module.exports = function ({ env }) {
               },
             },
           }),
+          new ExternalTemplateRemotesPlugin(),
         ],
       },
     },
