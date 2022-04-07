@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkservice_b=self.webpackChunkservice_b||[]).push([[508],{2508:function(e,r,c){c.r(r);var n=c(5849),s=c(184);r.default=function(e){var r=e.color;return(0,s.jsx)(n.Z,{color:r,children:"Service B - MUI5"})}}}]);
+//# sourceMappingURL=508.0bf9639d.chunk.js.map
